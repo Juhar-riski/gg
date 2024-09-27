@@ -42,7 +42,7 @@ class SaldoManager {
             this.saldo -= kurangi;
             this.updateSaldoDisplay();
         } else if (kurangi > this.saldo) {
-            console.log("Saldo tidak cukup.");
+            setTimeout(() => {console.log("Saldo tidak cukup.")},100);
         } else {
             console.log("Masukkan jumlah yang valid.");
         }
